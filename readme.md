@@ -29,18 +29,21 @@ Select Dpcore Plug-in and Jetraw Saver in this order (order matters).
 You should have the following pipeline configuration:
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/pipeline_configuration.png)
+
 MicroManager pipeline configuration
 
 
 In the configuration section of Jetraw Saver Plug-in you can choose the output folder for your compressed images.
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/jetraw_saver_plugin.png)
+
 Jetraw saver plug-in configuration
 
 
 Then you are ready to do an acquisition which prepares the images and saves a compressed copy of it.
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/acquisition_screen.png)
+
 Acquisition of 40 frames, 20 time points and 2 slices 
 
 
