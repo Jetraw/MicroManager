@@ -18,9 +18,9 @@ https://github.com/micro-manager/micro-manager/tree/svn-mirror/DeviceAdapters/PC
 ## Installation
 You will need the following JAR files for installation:
 
-- MMJ_.jar [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/MMJ_21.07.01.1.jar)
-- DpcorePlugin.jar [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/DpcorePlugin_21.07.01.1.jar)
-- JetrawSaverPlugin.jar [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/JetrawSaverPlugin_21.07.01.1.jar)
+- MMJ_ jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/MMJ_21.07.01.1.jar)
+- DpcorePlugin jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/DpcorePlugin_21.07.01.1.jar)
+- JetrawSaverPlugin jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/JetrawSaverPlugin_21.07.01.1.jar)
   
 If you need a previous version please go to [previous versions.](https://github.com/Jetraw/MicroManager/releases/
 
@@ -34,7 +34,7 @@ path_to_micromanager\mmplugins\
 Once all .jar files have been replaced/copied, you should be able to Dpcore prepare an acquired image and save a Jetraw compressed version of it during acquisition.
 In MicroManager you will need to add the following processes using the **plug-in section *On-the-fly Image Processing***.<br/>
   
-Select Dpcore Plug-in and Jetraw Saver in this order **(order matters).**
+**Select** Dpcore Plug-in and Jetraw Saver in this order **(IMPORTANT order matters).**
 
 Your pipeline configuration should look as follows:
 
@@ -49,7 +49,8 @@ In the configuration section of Jetraw Saver Plug-in you can **choose the output
 *Jetraw saver plug-in configuration*
 
 Then you are **ready to do an acquisition** which prepares the images and saves a compressed copy of it. To proceed with the acquisition please **press the icon "Multi-D Acq."** in the main Micro-Manager panel.  
-**IMPORTANT to remember** that while having Jetraw compression active the **Live and Snap options** will not work properly as a compressed image is not displayable, therefore **if you want preview your camera the Jetraw Saver Plugin must be removed from the pipeline.** The development team is already exploring alternatives to remove this limitation. 
+  
+**IMPORTANT:** remember that while having Jetraw compression active the **Live and Snap options** will not work properly as a compressed image is not displayable, therefore **if you want preview your camera the Jetraw Saver Plugin must be removed from the pipeline.** The development team is already exploring alternatives to remove this limitation. 
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/acquisition_screen.png)
 
