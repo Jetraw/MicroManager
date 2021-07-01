@@ -22,7 +22,7 @@ You will need the following JAR files for installation:
 - DpcorePlugin jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/DpcorePlugin_21.07.01.1.jar)
 - JetrawSaverPlugin jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/JetrawSaverPlugin_21.07.01.1.jar)
   
-If you need a previous version please go to [previous versions.](https://github.com/Jetraw/MicroManager/releases/
+If you need a previous version please go to [previous versions.](https://github.com/Jetraw/MicroManager/releases/)
 
 **Replace MMJ_.jar** in your MicroManager folder:
 path_to_micromanager\plugins\Micro-Manager\
