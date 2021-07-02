@@ -14,7 +14,9 @@ https://www.jetraw.com/
 
 At the moment **only Hamamatsu cameras are supported**. If you want to integrate/calibrate any other type of camera please [contact us.](#Contact)
 
-**PCO cameras** can use the PCO Generic Adapter that is provided within the **Micro-Manager 1.4**. PCO has already integrated the Dpcore plug-in module into its software, therefore if Micro-Manager detects a valid Jetraw installation the user will be able to Dpcore prepare the acquired image. For more information contact PCO or directly explore the source code available at:  
+**PCO cameras** can use the PCO Generic Adapter that is provided within the **Micro-Manager 1.4**. PCO has already integrated the Dpcore plug-in module into its software, therefore if Micro-Manager detects a valid Jetraw installation the user will be able to Dpcore prepare the acquired image.  
+  
+For more information contact PCO or directly explore the source code available at:    
 https://github.com/micro-manager/micro-manager/tree/svn-mirror/DeviceAdapters/PCO_Generic
 
 ## Installation
@@ -24,7 +26,7 @@ You will need the following JAR files for installation:
 - **DpcorePlugin** jar file.
 - **JetrawSaverPlugin** jar file.
 
-Download the ZIP file that contains all the necessary JAR files from [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/Jetraw_MicroManager_21.07.01.1.zip).
+Download the ZIP file that contains all necessary JAR files from [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/Jetraw_MicroManager_21.07.01.1.zip).
   
 If you need a previous version please go to [previous versions.](https://github.com/Jetraw/MicroManager/releases/)
 
@@ -37,11 +39,11 @@ path_to_micromanager\mmplugins\
 ## Usage
 Once all .jar files have been replaced/copied, you should be able to Dpcore prepare an acquired image and save a Jetraw compressed version of it during acquisition.  
 
-In MicroManager you need to add the following processes using the **plug-in section *On-the-fly Image Processing***.<br/>
+In MicroManager you need to modify the internal image processing pipeline introducing Dpcore and Jetraw processes using the **Micro-Manager plug-in *On-the-fly Image Processing***.<br/>
   
-**Select** Dpcore Plug-in and Jetraw Saver in this order **(IMPORTANT order matters).**
+Once the processing pipeline dialog is opened **select Dpcore Plug-in** and **Jetraw Saver** in this order. **(Note: IMPORTANT order matters).**
 
-Your pipeline configuration should look as follows:
+Your processing pipeline configuration should look as follows:
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/pipeline_configuration.png)
 
