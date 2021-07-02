@@ -20,9 +20,11 @@ https://github.com/micro-manager/micro-manager/tree/svn-mirror/DeviceAdapters/PC
 ## Installation
 You will need the following JAR files for installation:
 
-- **MMJ_** jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/MMJ_21.07.01.1.jar)
-- **DpcorePlugin** jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/DpcorePlugin_21.07.01.1.jar)
-- **JetrawSaverPlugin** jar file [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/JetrawSaverPlugin_21.07.01.1.jar)
+- **MMJ_** jar file. 
+- **DpcorePlugin** jar file.
+- **JetrawSaverPlugin** jar file.
+
+Download the ZIP file that contains all the necessary JAR files from [latest (pre-)release](https://github.com/Jetraw/MicroManager/releases/download/21.07.01.1/Jetraw_MicroManager_21.07.01.1.zip).
   
 If you need a previous version please go to [previous versions.](https://github.com/Jetraw/MicroManager/releases/)
 
