@@ -12,9 +12,9 @@ https://www.jetraw.com/
 
 - For writing compressed files a **valid License** is needed. 
 
-At the moment **only Hamamatsu cameras are supported**. If you want to integrate/calibrate any other type of camera please [contact us.](#Contact)
+At the moment **only PCO cameras are supported** and **Hamamatsu cameras** will be supported soon. Remember as well that **only 16-bit images** are supported. If you want to integrate/calibrate any other type of camera please [contact us.](#Contact)
 
-**PCO cameras** can use the PCO Generic Adapter that is provided within the **Micro-Manager 1.4**. PCO has already integrated the Dpcore plug-in module into its software, therefore if Micro-Manager detects a valid Jetraw installation the user will be able to Dpcore prepare the acquired image.  
+**PCO cameras** can also use the PCO Generic Adapter that is provided within the **Micro-Manager 1.4**. PCO has already integrated the Dpcore plug-in module into its software, therefore if Micro-Manager detects a valid Jetraw installation the user will be able to Dpcore prepare the acquired image.  
   
 For more information contact PCO or directly explore the source code available at:    
 https://github.com/micro-manager/micro-manager/tree/svn-mirror/DeviceAdapters/PCO_Generic
@@ -51,11 +51,17 @@ Your processing pipeline configuration should look as follows:
 
 *1. Micro-Manager pipeline configuration*
 
-In the configuration section of Jetraw Saver Plug-in you can **choose the output folder** for your compressed images.
+In the configuration section of the **DPcore plug-in** you can **choose the camera** and the **camera identifier** to be used with dpcore. Only the registered identifiers for the specific camera will appear in the drop-down menu. 
+
+![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/dpcore_plugin.png)
+
+*2. Dpcore plug-in configuration*
+
+In the configuration section of the **Jetraw Saver plug-in** you can **choose the output folder** for your compressed images.
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/jetraw_saver_plugin.png)
 
-*2. Jetraw saver plug-in configuration*
+*3. Jetraw saver plug-in configuration*
 
 Then you are **ready to do an acquisition** which prepares the images and saves a compressed copy of it. To proceed with the acquisition please **press the icon "Multi-D Acq."** in the main Micro-Manager panel.  
   
