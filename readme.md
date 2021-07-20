@@ -36,6 +36,8 @@ path_to_micromanager\plugins\Micro-Manager\
 **Copy/replace your .jar plug-ins files** (DpcorePlugin.jar and JetrawSaverPlugin.jar) into:<br/>
 path_to_micromanager\mmplugins\
 
+*Note:* Micro-Manager only accepts one version of each plug-in. Therefore if a previous version of the plug-in is present in the folder, it must be removed. 
+
 ## Usage
 Once all .jar files have been replaced/copied, you should be able to Dpcore prepare an acquired image and save a Jetraw compressed version of it during acquisition.  
 
@@ -57,7 +59,7 @@ In the configuration section of Jetraw Saver Plug-in you can **choose the output
 
 Then you are **ready to do an acquisition** which prepares the images and saves a compressed copy of it. To proceed with the acquisition please **press the icon "Multi-D Acq."** in the main Micro-Manager panel.  
   
-**IMPORTANT:** remember that while having Jetraw compression active the **Live and Snap options** will not work properly as a compressed image is not directly displayable, therefore **if you want preview your camera the Jetraw Saver Plugin must be removed from the processing pipeline.** Our development team is already exploring alternatives to remove this limitation. 
+**IMPORTANT:** remember that while having Jetraw compression active the **Live and Snap options** will not work properly as a compressed image is not directly displayable, therefore **if you want preview your camera the Jetraw Saver Plugin must be removed from the processing pipeline or disable the Snap/Live option.** Our development team is already exploring alternatives to remove this limitation. 
 
 ![alt text](https://github.com/Jetraw/MicroManager/blob/master/screenshots/acquisition_screen.png)
 
