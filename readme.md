@@ -8,7 +8,7 @@ https://www.jetraw.com/
 *Note:* if you do not have Jetraw installed visit https://www.jetraw.com/downloads/software and for usage information https://github.com/Jetraw/Jetraw  
 
 - **Micro-Manager 2.0 installed** for Windows 64 bits.<br/>
-*Note:* if you do not have Micro-Manager installed visit https://micro-manager.org/wiki/Download%20Micro-Manager_Latest%20Release  
+*Note:* if you do not have Micro-Manager installed visit https://micro-manager.org/Download_Micro-Manager_Latest_Release
 
 - For writing compressed files a **valid License** is needed. 
 
